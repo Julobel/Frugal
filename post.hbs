@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{#post}}
+
+<div class="content-container">
+    <article>
+        <div id="post-header">
+            <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}"></time>
+                {{date format="D MMMM YYYY"}}
+            </time>
+            {{#primary_tag}}
+                <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
+            {{/primary_tag}}
+            <h1 id="post-title">{{title}}</h1>
+        </div>
+        <div id="post-body">
+            {{content}}
+        </div>
+    </article>
+    <section class="share-container">
+        <p>
+            <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fab fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fab fa-facebook-f fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fab fa-google-plus-g fa-2x"></i>
+            </a>
+        </p>
+    </section>
+</div>
+
+{{/post}}

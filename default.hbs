@@ -11,14 +11,25 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/global.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/highlight/mono-blue.css"}}">
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 </head>
 <body>
-    
-    {{!-- Body - default.hbs content --}}
-    {{{body}}}
+
+    <div id="wrapper">
+        {{> "header"}}
+
+        {{!-- Body - default.hbs content --}}
+        {{{body}}}
+
+        {{> "footer"}}
+    </div>
+
+    {{!-- Highlight Lib Management --}}
+    <script src="{{asset "js/highlight.pack.js"}}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}

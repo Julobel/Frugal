@@ -2,11 +2,8 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-{{!-- The Header --}}
-{{> "header"}}
-
 {{!-- The main content area --}}
-<main id="main-content">
+<main class="content-container">
 
     <section>
         {{#foreach posts}}
@@ -17,6 +14,3 @@ into the {body} of the default.hbs template --}}
     </section>
 
 </main>
-
-{{!-- The Footer --}}
-{{> "footer"}}
