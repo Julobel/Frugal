@@ -1,0 +1,17 @@
+<header>
+    <div id="header-banner">
+
+    </div>
+    <div class="container">
+        {{#if @blog.logo}}
+            <img id="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+            <h1 id="title">{{@blog.title}}</h1>
+            {{!-- uncommented the line below if you want to display a description --}}
+            {{!-- <h2 id="site-description">{{@blog.description}}</h2> --}}
+        {{else}}
+            <div id="title-alone">
+                <h1 id="title-alone">{{@blog.title}}</h1>
+            </div>
+        {{/if}}
+    </div>
+</header>
