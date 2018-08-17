@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang={{lang}}>
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {{!-- Base Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/global.css"}}" />
+
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{ghost_head}}
+</head>
+<body>
+    
+
+    {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
+    {{ghost_foot}}
+</body>
+</html>
