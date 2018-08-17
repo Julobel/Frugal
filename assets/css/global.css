@@ -5,9 +5,10 @@
 
 html, body {
 	font-size: 1rem;
-	line-height: 1.65em;
-	font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  line-height: 1.65em;
+  font-family: "Open Sans", sans-serif;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 700;
   height: 100%;
   position: relative;
   min-height: 100%;
@@ -80,7 +81,11 @@ html, body {
   margin-right: auto;
 }
 
-#main-article-container {
+main {
+  opacity: 0.7;
+}
+
+#main-post-container {
   display: flex;
   justify-content: column;
 }
@@ -91,8 +96,24 @@ html, body {
 
 #main-post {
   width: 570px;
-  border-left: 2px solid black;
+  border-left: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgba(0, 0, 0, .3);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
   padding-left: 20px
+}
+
+#main-post:link {
+  text-decoration: none;
+  color:	#111122;
+}
+
+#main-post:visited {
+  color:	#111122;
+}
+
+#main-post:hover {
+  color: #4db3af;
 }
 
 
