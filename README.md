@@ -1,6 +1,6 @@
 # Frugal
 
-An open-source theme for the [Ghost](https://ghost.org/) blogging platform, ocused on content. Last tested with Ghost v1.25.5.
+An open-source theme for the [Ghost](https://ghost.org/) blogging platform, focused on content. Last tested with Ghost v1.25.5.
 
 ## Suggested Customizations
 
