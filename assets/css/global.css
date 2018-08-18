@@ -197,6 +197,7 @@ blockquote p::after {
   text-transform: capitalize;
   opacity: 0.8;
   margin: 15px;
+  margin-bottom: 9px;
 }
 
 #title-alone {
@@ -225,11 +226,11 @@ blockquote p::after {
 
 #rss-icon img {
   margin-bottom: 0;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
-#rss-icon:link:hover {
-  color:	#4175be; /* Customise it */
+#rss-icon img:hover {
+  opacity: 1;
 }
 
 #site-description {
