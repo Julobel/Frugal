@@ -3,7 +3,10 @@
   margin: 0;
 } 
 
+/* Basic Typography */ 
+
 html, body {
+  background-color: white;
 	font-size: 1rem;
   line-height: 1.65em;
   font-family: "Open Sans", sans-serif;
@@ -28,11 +31,116 @@ html, body {
   align-items: center;
 }
 
+
+
+/* Page Elements */
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+img, iframe {
+	max-width: 100%;
+}
+
+ul, ol {
+  margin-top:  0.3em;
+  margin-bottom: 0.3em;
+	margin-left: 3em; 
+}
+
+a:link {
+  color:	#111122;  /* Customise it */
+}
+
+a:visited {
+  color:	#111122;  /* Customise it */
+}
+
+a:hover {
+  color: #4175be;  /* Customise it */
+  font-weight: 700;
+}
+
+article p {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+pre {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #c6d6eb;  /* Customise it */
+}
+
+pre code {
+  font-family: "Courier New", Courier, monospace;
+  font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+  font-weight: 400;
+}
+
+strong {
+	font-weight: 700;
+}
+
+ul code, li code, p code, span code {
+  padding: 1px 3px;
+  font-family: "Courier New", Courier, monospace;
+  font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+  font-weight: 600;
+  font-size: 0.8em;
+  white-space: pre;
+  color: red;
+  border: 1px solid #ffd6cc;
+  background: #ffd6cc;
+  border-radius: 2px;
+}
+
+span b {
+  color: #4175be;
+}
+
+blockquote p {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0.8em;
+  padding-left: -1em;
+  border-left: 0.2em solid #5483c4;  /* Customise it */
+  font-family: 'Roboto', serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+blockquote p::after {
+  max-width: 720px;
+  content: '\201C';
+  font-family: 'Sanchez';
+  color: #5483c4;  /* Customise it */
+}
+
+blockquote p::before, blockquote p::after {
+  max-width: 720px;
+  content: '\201C';
+  font-family: 'Sanchez';
+  color: #5483c4;  /* Customise it */
+}
+
+blockquote p::after {
+  max-width: 720px;
+  content: '\201D';
+}
+
+
+
 /* Header */
 #header-banner {
   height: 100px;
   background: white;
-  background: linear-gradient(20deg,#b6fbff  0%,#83a4d4  100%); /* Customise it */
+  background: linear-gradient(15deg,#96dce0  0%,#83a4d4  100%); /* Customise it */
   background-size: cover;
 }
 
@@ -58,9 +166,9 @@ html, body {
   position: relative;
   top: -50px;
   margin-bottom: -50px;
-  border: 2px solid white;
+  border: 2px solid white;  /* Customise it */
   border-radius: 50px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.50);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.50);  /* Customise it */
 }
 
 #site-description {
@@ -69,6 +177,37 @@ html, body {
   margin-bottom: 15px;
 }
 
+.container a {
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+
+}
+
+.container a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #4175be;  /* Customise it */
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all .5s cubic-bezier(1,.25,0,.75) 0s;;
+  transition: all .5s cubic-bezier(1,.25,0,.75) 0s;;
+}
+.container a:hover:before {
+  color: #4175be;  /* Customise it */
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  }
 
 
 /* Main */
@@ -96,8 +235,8 @@ main {
 
 #main-post {
   width: 570px;
-  border-left: 2px solid rgb(0, 0, 0);
-  border-left: 2px solid rgba(0, 0, 0, .3);
+  border-left: 2px solid rgb(0, 0, 0);  /* Customise it */
+  border-left: 2px solid rgba(0, 0, 0, .3);  /* Customise it */
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
   padding-left: 20px
@@ -105,17 +244,7 @@ main {
 
 #main-post:link {
   text-decoration: none;
-  color:	#111122;
 }
-
-#main-post:visited {
-  color:	#111122;
-}
-
-#main-post:hover {
-  color: #4db3af;
-}
-
 
 
 /* Post */
@@ -127,14 +256,22 @@ main {
 
 #post-header h1 {
   text-transform: uppercase;
-  font-size: 2.1em;
+  font-size: 1.9em;
 	line-height: 1.1em;
 	margin-top: 0.4em;
   margin-bottom: 0.6em;
 }
 
+#post-header p, #post-header a {
+  opacity: 0.5;
+}
+
+#post-header p {
+  margin-bottom: -0.5em;
+}
+
 #post-body h2 {
-  font-size:1.9em;
+  font-size:1.7em;
 	line-height: 1.2em;
 	margin-top: 1.3em;
   margin-bottom: 0.5em; 
@@ -159,74 +296,6 @@ main {
 	font-size:1.1em;
 }
 
-img, iframe {
-	max-width: 100%;
-}
-
-ul, ol {
-  margin-top:  0.3em;
-  margin-bottom: 0.3em;
-	margin-left: 3em; 
-}
-
-pre {
-  margin-top: 0.5em;
-  margin-bottom: 0.7em;
-  border: 1px solid #c6d6eb;
-}
-
-strong {
-	font-weight: 700;
-}
-
-ul code, li code, p code, span code {
-  padding: 1px 3px;
-  font-family: "Courier New", Courier, monospace;
-  font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
-  font-weight: 600;
-  font-size: 0.8em;
-  white-space: pre;
-  color: red;
-  border: 1px solid #ffd6cc;
-  background: #ffd6cc;
-  border-radius: 2px;
-}
-
-blockquote p {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0.8em;
-  padding-left: -1em;
-  border-left: 0.2em solid #5483c4;
-  font-family: 'Roboto', serif;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: 100;
-}
-
-blockquote p::after {
-  max-width: 720px;
-  content: '\201C';
-  font-family: 'Sanchez';
-  color: #5483c4;
-}
-
-blockquote p::before, blockquote p::after {
-  max-width: 720px;
-  content: '\201C';
-  font-family: 'Sanchez';
-  color: #5483c4;
-}
-
-blockquote p::after {
-  max-width: 720px;
-  content: '\201D';
-}
-
-
 /* Footer */
 
 footer {
@@ -243,7 +312,7 @@ footer {
   align-items: center;
   height: 140px;
   background: white;
-  background: linear-gradient(20deg, #83a4d4 0%, #b6fbff 100%); /* Customise it */
+  background: linear-gradient(15deg, #83a4d4 0%, #96dce0 100%); /* Customise it */
   background-size: cover;
 }
 
@@ -254,4 +323,27 @@ footer {
 
 #footer-container span {
   text-align: center;
+}
+
+span a:link {
+  color:	#4175be;  /* Customise it */
+}
+
+span a:visited {
+  color:	#4175be;  /* Customise it */
+}
+
+span a:hover {
+  color: white;  /* Customise it */
+}
+
+
+
+/* Custom Selection */
+
+::selection {
+  background: #c6d6eb; /* WebKit/Blink Browsers - Customise it */
+}
+::-moz-selection {
+  background: #c6d6eb; /* Gecko Browsers - Customise it*/
 }

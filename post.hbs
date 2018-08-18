@@ -5,11 +5,13 @@
 <div class="content-container">
     <article>
         <div id="post-header">
-            <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}"></time>
-                {{date format="D MMMM YYYY"}}
-            </time>
+            <p>
+                <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}"></time>
+                    {{date format="D MMMM YYYY"}}
+                </time>
+            </p>
             {{#primary_tag}}
-                <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
+                <a href="{{url}}">{{name}}</a>
             {{/primary_tag}}
             <h1 id="post-title">{{title}}</h1>
         </div>
