@@ -21,13 +21,21 @@
 <body>
 
     <div id="wrapper">
+
         {{> "header"}}
+
+        {{!-- Go to top button --}}
+        <a onclick="topFunction()" id="top-button" title="Go to top"><img src="/partials/icons/circle-up.svg" alt="ctrl-icon"></a>
 
         {{!-- Body --}}
         {{{body}}}
 
         {{> "footer"}}
+        
     </div>
+
+    
+    <script src="{{asset "js/global.js"}}"></script>
 
     {{!-- Highlight Lib Management --}}
     <script src="{{asset "js/highlight.pack.js"}}"></script>
