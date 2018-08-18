@@ -384,3 +384,30 @@ span a:hover {
 ::-moz-selection {
   background: #c6d6eb; /* Gecko Browsers - Customise it*/
 }
+
+
+
+/* Go To Top Button  */
+
+#top-button {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  display: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.23s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#top-buttn img {
+  opacity: 0.1;
+}
+
+#top-button:hover {
+  margin-bottom: 8px;
+}
