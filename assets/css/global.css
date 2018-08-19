@@ -123,6 +123,7 @@ pre {
 }
 
 pre code {
+  width: auto;
   font-family: "Courier New", Courier, monospace;
   font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
   font-weight: 400;
@@ -152,6 +153,7 @@ span b {
 blockquote p {
   display: inline-block;
   position: relative;
+  max-width: 720px;
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -165,21 +167,18 @@ blockquote p {
 }
 
 blockquote p::after {
-  max-width: 720px;
   content: '\201C';
   font-family: 'Sanchez';
   color: #5483c4;  /* Customise it */
 }
 
 blockquote p::before, blockquote p::after {
-  max-width: 720px;
   content: '\201C';
   font-family: 'Sanchez';
   color: #5483c4;  /* Customise it */
 }
 
 blockquote p::after {
-  max-width: 720px;
   content: '\201D';
 }
 
@@ -272,6 +271,7 @@ blockquote p::after {
   }
 
 
+  
 /* Main */
 
 .content-container {
@@ -292,11 +292,11 @@ main {
 }
 
 #main-date-post {
-  width: 100px;
+  min-width: 100px;
 }
 
 #main-post {
-  width: 570px;
+  width: auto; 
   border-left: 2px solid rgb(0, 0, 0);  /* Customise it */
   border-left: 2px solid rgba(0, 0, 0, .3);  /* Customise it */
   -webkit-background-clip: padding-box; /* for Safari */
@@ -307,6 +307,7 @@ main {
 #main-post:link {
   text-decoration: none;
 }
+
 
 
 /* Post */
@@ -390,6 +391,7 @@ span a:hover {
 /* Go To Top Button  */
 
 #top-button {
+  z-index: 99;
   position: fixed;
   bottom: 40px;
   right: 20px;
@@ -410,4 +412,78 @@ span a:hover {
 
 #top-button:hover {
   margin-bottom: 8px;
+}
+
+
+
+/* Media management */
+
+/* Small Screens */
+@media only screen and (max-width: 800px) { 
+
+  #post-title {
+    font-size: 1em;
+  }
+
+  .content-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #main-post {
+    border-left: 0px;
+  }
+
+  #main-post-container {
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-top: 2px solid rgb(0, 0, 0);  /* Customise it */
+    border-top: 2px solid rgba(0, 0, 0, .3);  /* Customise it */
+  }
+}
+
+
+/* Tiny Screens */
+@media only screen and (max-width: 320px) { 
+  
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size:1.2em;
+  }
+  
+  h4 {
+    font-size:1.1em;
+  }
+  
+  h5, h6 {
+    font-size:0.9em;
+  }
+
+  ul, ol {
+		margin-left: 1.7em; 
+  }
+
+  blockquote {
+    margin-left: 0;
+    padding-left: -0.3em;
+    font-size: 0.75em;
+  }
+
+  blockquote p {
+    margin: 0;
+    margin-left: 0.3em;
+  }
+
+  code {
+    font-size: 0.8em;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
+
 }
