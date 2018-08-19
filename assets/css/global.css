@@ -1,13 +1,15 @@
 * {
-	padding: 0;
+  padding: 0;
   margin: 0;
 } 
 
-/* Basic Typography */ 
+/***********************\ 
+    Basic Typography 
+\***********************/ 
 
 html, body {
   background-color: white;
-	font-size: 1rem;
+  font-size: 1rem;
   line-height: 1.65em;
   font-family: Arial, Helvetica, sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
@@ -33,7 +35,9 @@ html, body {
 
 
 
-/* Page Elements */
+/***********************\ 
+      Page Elements 
+\***********************/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Times New Roman', Times, serif;
@@ -44,23 +48,23 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   text-transform: uppercase;
   font-size: 1.9em;
-	margin-top: 1.4em;
+  margin-top: 1.4em;
   margin-bottom: 0.4em;
 }
 
 h2 {
   font-size:1.7em;
-	margin-top: 1.3em;
+  margin-top: 1.3em;
   margin-bottom: 0.4em; 
 }
 
 h3, h4, h5, h6 {
   margin-top: 0.9em;
-	margin-bottom: 0.2em;	
+  margin-bottom: 0.2em; 
 }
 
 h3 {
-	font-size:1.4em;
+  font-size:1.4em;
 }
 
 h4 {
@@ -68,11 +72,11 @@ h4 {
 }
 
 h5 {
-	font-size:1.2em;
+  font-size:1.2em;
 }
 
 h6 {
-	font-size:1.1em;
+  font-size:1.1em;
 }
 
 p {
@@ -80,7 +84,7 @@ p {
 }
 
 img, iframe {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 img {
@@ -91,15 +95,15 @@ img {
 ul, ol {
   margin-top:  0.3em;
   margin-bottom: 0.3em;
-	margin-left: 3em; 
+  margin-left: 3em; 
 }
 
 a:link {
-  color:	#111122;  /* Customise it */
+  color:  #111122;  /* Customise it */
 }
 
 a:visited {
-  color:	#111122;  /* Customise it */
+  color:  #111122;  /* Customise it */
 }
 
 a:hover {
@@ -130,7 +134,7 @@ pre code {
 }
 
 strong {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 ul code, li code, p code, span code {
@@ -184,7 +188,9 @@ blockquote p::after {
 
 
 
-/* Header */
+/***********************\ 
+         Header 
+\***********************/
 #header-banner {
   height: 100px;
   background: white;
@@ -272,7 +278,9 @@ blockquote p::after {
 
 
   
-/* Main */
+/***********************\ 
+          Main 
+\***********************/
 
 .content-container {
   max-width: 720px;
@@ -310,7 +318,9 @@ main {
 
 
 
-/* Post */
+/***********************\ 
+          Post 
+\***********************/
 
 #post-header {
   text-align: center;
@@ -320,7 +330,7 @@ main {
 #post-header h1 {
   text-transform: uppercase;
   font-size: 1.9em;
-	margin-top: 0.4em;
+  margin-top: 0.4em;
   margin-bottom: 0.6em;
 }
 
@@ -332,9 +342,31 @@ main {
   margin-bottom: -0.5em;
 }
 
+#share-container {
+  display: flex;
+  justify-content: center;
+}
+
+#share-container a {
+  margin: 0.5em;
+  opacity: 0.5;
+}
+
+#share-container a:hover {
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+#share-container a img  {
+  margin-bottom: 8px;
+}
 
 
-/* Footer */
+
+
+/***********************\ 
+          Footer 
+\***********************/
 
 footer {
   position: scroll;
@@ -364,11 +396,11 @@ footer {
 }
 
 span a:link {
-  color:	#4175be;  /* Customise it */
+  color:  #4175be;  /* Customise it */
 }
 
 span a:visited {
-  color:	#4175be;  /* Customise it */
+  color:  #4175be;  /* Customise it */
 }
 
 span a:hover {
@@ -377,7 +409,9 @@ span a:hover {
 
 
 
-/* Custom Selection */
+/***********************\ 
+     Custom Selection 
+\***********************/
 
 ::selection {
   background: #c6d6eb; /* WebKit/Blink Browsers - Customise it */
@@ -388,7 +422,9 @@ span a:hover {
 
 
 
-/* Go To Top Button  */
+/***********************\ 
+     Go to top Button 
+\***********************/
 
 #top-button {
   z-index: 99;
@@ -416,7 +452,9 @@ span a:hover {
 
 
 
-/* Media management */
+/***********************\ 
+    Media Management 
+\***********************/
 
 /* Small Screens */
 @media only screen and (max-width: 800px) { 
@@ -464,7 +502,7 @@ span a:hover {
   }
 
   ul, ol {
-		margin-left: 1.7em; 
+    margin-left: 1.7em; 
   }
 
   blockquote {

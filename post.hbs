@@ -2,7 +2,12 @@
 
 {{#post}}
 
+{{!-- <a id="rss-icon-content" href="{{@blog.url}}/rss/">
+    <img src="/partials/icons/rss.svg" alt="rss-icon">
+</a>  --}}
 <div class="content-container">
+
+    {{!-- Content of a post --}}
     <article>
         <div id="post-header">
             <p>
@@ -19,17 +24,26 @@
             {{content}}
         </div>
     </article>
-{{!--     <section class="share-container">
-        <p>
-            <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
-                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fab fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fab fa-facebook-f fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://plus.google.com/share?url={{url absolute="true"}}"
-                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fab fa-google-plus-g fa-2x"></i>
-            </a>
-        </p>
-    </section> --}}
+
+    {{!-- Share buttons --}}
+    <section id="share-container">
+        <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <img src="/partials/icons/twitter.svg" alt="twitter-icon">
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{title}}&summary=&source={{@blog.url}}"
+            onclick="window.open(this.href, 'linkedin-share'">
+            <img src="/partials/icons/linkedin.svg" alt="linkedin-icon">
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <img src="/partials/icons/facebook.svg" alt="facebook-icon">
+        </a>
+        <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+            <img src="/partials/icons/google-plus.svg" alt="google-plus-icon">
+        </a>
+    </section>
 </div>
 
 {{/post}}
