@@ -13,13 +13,13 @@
             {{#primary_tag}}
                 <a href="{{url}}">{{name}}</a>
             {{/primary_tag}}
-            <h1 id="post-title">{{title}}</h1>
+            <h1>{{title}}</h1>
         </div>
         <div id="post-body">
             {{content}}
         </div>
     </article>
-    <section class="share-container">
+{{!--     <section class="share-container">
         <p>
             <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fab fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -29,7 +29,7 @@
                 onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fab fa-google-plus-g fa-2x"></i>
             </a>
         </p>
-    </section>
+    </section> --}}
 </div>
 
 {{/post}}
