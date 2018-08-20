@@ -292,11 +292,37 @@ blockquote p::after {
 \***********************/
 
 .content-container {
-  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: flex-start;
+  width: 720px;
   padding: 10px;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#pagination-container h3 {
+  margin: 0;
+  font-size: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#pagination-container a {
+  text-decoration: none;
+  font-size: 3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 main {
@@ -473,6 +499,8 @@ span a:hover {
   }
 
   .content-container {
+    width: auto;
+    max-width: 720px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -531,6 +559,10 @@ span a:hover {
 
   footer {
     font-size: 0.75em;
+  }
+
+  #pagination-container a {
+    font-size: 2em;
   }
 
 }

@@ -8,10 +8,10 @@ into the {body} of the default.hbs template --}}
 
     <section>
         {{#foreach posts}}
-
             {{> "post_list"}}
-
         {{/foreach}}
     </section>
 
+    <!-- Pagination block -->
+    {{pagination}}
 </main>

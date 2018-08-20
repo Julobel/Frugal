@@ -1,0 +1,11 @@
+<div id="pagination-container">  
+    {{#if prev}}
+        <a href="{{page_url prev}}">⟵</a>
+    {{/if}}
+        
+    <h3>{{page}} / {{pages}}</h3>
+
+    {{#if next}}
+        <a href="{{page_url next}}">⟶</a>
+    {{/if}}
+</div>
