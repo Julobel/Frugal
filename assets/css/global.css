@@ -244,6 +244,15 @@ blockquote p::after {
   margin-bottom: 15px;
 }
 
+#rss-icon-content {
+  align-self: center;
+  opacity: 0.3;
+}
+
+#rss-icon-content:hover {
+  opacity: 1;
+}
+
 .container #title-link {
   text-decoration: none;
   position: relative;
