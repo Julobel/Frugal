@@ -286,6 +286,28 @@ blockquote p::after {
   }
 
 
+
+/***********************\ 
+           Nav 
+\***********************/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+}
+
+nav a {
+  margin: 0.5em;
+  text-decoration: none;
+  border-top: 2px solid rgb(65, 117, 190);  /* Customise it */
+}
+
+nav a b {
+  opacity: 0.8;
+}
+
+
   
 /***********************\ 
           Main 
@@ -492,7 +514,11 @@ span a:hover {
 \***********************/
 
 /* Small Screens */
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 800px) {
+  
+  nav {
+    font-size: 1.2em;
+  }
 
   #post-title {
     font-size: 1em;
@@ -520,7 +546,11 @@ span a:hover {
 
 
 /* Tiny Screens */
-@media only screen and (max-width: 320px) { 
+@media only screen and (max-width: 320px) {
+  
+  nav {
+    font-size: 1em;
+  }
   
   h2 {
     font-size: 1.3em;
